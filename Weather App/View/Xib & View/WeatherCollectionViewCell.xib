@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoSlab-Bold.ttf">
+            <string>RobotoSlab-Bold</string>
+        </array>
+        <array key="RobotoSlab-Regular.ttf">
+            <string>RobotoSlab-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherCollectionViewCell" id="gTV-IL-0wX" customClass="WeatherCollectionViewCell" customModule="Weather_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlY-De-CDu">
+                        <rect key="frame" x="0.0" y="0.0" width="103" height="149"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4d-mR-alB">
+                                <rect key="frame" x="0.0" y="10" width="93" height="129"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-zy-znA">
+                                        <rect key="frame" x="5" y="10" width="83" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZT-0u-54O">
+                                        <rect key="frame" x="5" y="119" width="83" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rc2-Fe-St3">
+                                        <rect key="frame" x="31.666666666666671" y="49.666666666666657" width="30" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rc2-Fe-St3" secondAttribute="height" multiplier="1:1" id="76E-xe-72B"/>
+                                            <constraint firstAttribute="width" constant="30" id="Rtq-P6-fJ0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstItem="rc2-Fe-St3" firstAttribute="centerX" secondItem="u4d-mR-alB" secondAttribute="centerX" id="09L-Ib-clZ"/>
+                                    <constraint firstItem="hkR-zy-znA" firstAttribute="top" secondItem="u4d-mR-alB" secondAttribute="top" constant="10" id="FhM-5J-hNH"/>
+                                    <constraint firstAttribute="bottom" secondItem="7ZT-0u-54O" secondAttribute="bottom" constant="10" id="Sn3-Vs-fyz"/>
+                                    <constraint firstItem="hkR-zy-znA" firstAttribute="leading" secondItem="u4d-mR-alB" secondAttribute="leading" constant="5" id="aJ8-Vz-ufG"/>
+                                    <constraint firstAttribute="trailing" secondItem="hkR-zy-znA" secondAttribute="trailing" constant="5" id="hcj-Np-sLg"/>
+                                    <constraint firstItem="rc2-Fe-St3" firstAttribute="centerY" secondItem="u4d-mR-alB" secondAttribute="centerY" id="pIq-Be-W0D"/>
+                                    <constraint firstItem="7ZT-0u-54O" firstAttribute="leading" secondItem="u4d-mR-alB" secondAttribute="leading" constant="5" id="spK-1O-b6W"/>
+                                    <constraint firstAttribute="trailing" secondItem="7ZT-0u-54O" secondAttribute="trailing" constant="5" id="ycA-Jb-y1N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="u4d-mR-alB" secondAttribute="bottom" constant="10" id="PqB-yW-PBe"/>
+                            <constraint firstItem="u4d-mR-alB" firstAttribute="leading" secondItem="BlY-De-CDu" secondAttribute="leading" id="Q2U-Dm-S1j"/>
+                            <constraint firstAttribute="trailing" secondItem="u4d-mR-alB" secondAttribute="trailing" constant="10" id="Rd5-3i-1hn"/>
+                            <constraint firstItem="u4d-mR-alB" firstAttribute="top" secondItem="BlY-De-CDu" secondAttribute="top" constant="10" id="Tlr-Wc-Tkr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="BlY-De-CDu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BUo-6s-Pxi"/>
+                <constraint firstAttribute="bottom" secondItem="BlY-De-CDu" secondAttribute="bottom" id="IfD-zB-ffD"/>
+                <constraint firstItem="BlY-De-CDu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eZI-40-ws4"/>
+                <constraint firstAttribute="trailing" secondItem="BlY-De-CDu" secondAttribute="trailing" id="mun-Az-75h"/>
+            </constraints>
+            <size key="customSize" width="103" height="149"/>
+            <connections>
+                <outlet property="temperaturelabel" destination="7ZT-0u-54O" id="C7Q-JX-WPq"/>
+                <outlet property="timelabel" destination="hkR-zy-znA" id="KnO-nx-quo"/>
+                <outlet property="weatherImageView" destination="rc2-Fe-St3" id="oeF-NA-j2V"/>
+                <outlet property="weatherView" destination="u4d-mR-alB" id="qXd-gJ-5D9"/>
+            </connections>
+            <point key="canvasLocation" x="141.22137404580153" y="54.577464788732399"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
