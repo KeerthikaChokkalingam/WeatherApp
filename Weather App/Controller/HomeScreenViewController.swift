@@ -97,6 +97,9 @@ extension HomeScreenViewController {
                     self.SetUpUI()
                 }
             })
+            if gettedResponse == nil {
+                errorViewSetUp()
+            }
         } else {
             errorViewSetUp()
             let controller = UIAlertController(title: "No Internet Detected", message: "This app requires an Internet connection", preferredStyle: .alert)

@@ -16,7 +16,7 @@ class HomeScreenViewModel {
         
         let task = URLSession.shared.dataTask(with: URL(string: requestUrl)!) { data, response, error in
             if let error = error {
-                return
+                completion()
             }
             guard let response = response as? HTTPURLResponse else {return}
             if response.statusCode == 200 {
@@ -27,12 +27,13 @@ class HomeScreenViewModel {
                         completion()
                     } catch {
                         print("Decode error: \(error)")
+                        completion()
                     }
                 } else {
-                    return
+                    completion()
                 }
             } else {
-                return
+                completion()
             }
         }.resume()
         
